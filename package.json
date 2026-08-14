@@ -1,5 +1,5 @@
 {
-  "name": "@local/dsh-provider-usage",
+  "name": "@local/dsh-subscription-usage",
   "version": "0.1.0",
   "private": true,
   "description": "Subscription provider usage badge for DeepSeek Harness Web",

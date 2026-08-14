@@ -11,7 +11,7 @@ material.
 
 ## Scope
 
-- The Host-side HTTP route (`/provider-usage`) and its credential handling.
+- The Host-side HTTP route (`/subscription-usage`) and its credential handling.
 - The Web client badge: it must never receive tokens, only usage summaries.
 
 ## Out of Scope

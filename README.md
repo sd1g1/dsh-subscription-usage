@@ -1,4 +1,4 @@
-# DSH Provider Usage
+# DSH Subscription Usage
 
 DeepSeek Harness Web 插件：当当前模型来自订阅制 Provider 时，在模型选择器左侧显示账户剩余用量百分比与距离下一次刷新时间。
 
@@ -21,7 +21,7 @@ Provider 未配置凭据、接口不支持或查询失败时，徽标自动隐�
 ## 安装与接入
 
 本包同时提供运行时插件和 DSH Bundle。Bundle 内置 `cordis.patch.yml`，会自动插入
-`ui-provider-usage` 行；用户不需要再把这行复制到 profile 的
+`ui-subscription-usage` 行；用户不需要再把这行复制到 profile 的
 `cordis.patch.yml`。
 
 在 `~/.dsh/profiles/web/package.json` 中，将包加入 `dependencies`，并把包名加入
@@ -30,21 +30,21 @@ Provider 未配置凭据、接口不支持或查询失败时，徽标自动隐�
 ```json
 {
   "dependencies": {
-    "@scope/dsh-provider-usage": "^0.1.0"
+    "@scope/dsh-subscription-usage": "^0.1.0"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@deepseek-ai/dsh-web-app",
-        "@scope/dsh-provider-usage"
+        "@scope/dsh-subscription-usage"
       ]
     }
   }
 }
 ```
 
-发布前的本地开发可以把依赖改为 `link:/path/to/dsh-provider-usage`。
+发布前的本地开发可以把依赖改为 `link:/path/to/dsh-subscription-usage`。
 修改 profile 的 `package.json` 后需要重启 DSH；仅修改 Bundle patch 或用户 patch 时，
 可按当前 DSH 的 HMR 行为重新加载配置。
 

@@ -9,6 +9,6 @@ export interface Config {
   opencodeGoUsageUrl?: string;
 }
 
-export declare const name = "provider-usage";
+export declare const name = "subscription-usage";
 export declare const inject: string[];
 export declare function apply(ctx: Context, config?: Config): void;

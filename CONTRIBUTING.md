@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in `dsh-provider-usage`.
+Thanks for your interest in `dsh-subscription-usage`.
 
 ## Development
 
@@ -10,7 +10,7 @@ npm test
 
 The package is plain ESM JavaScript, no build step. The plugin entry is
 `lib/index.js` (Host) and `lib/client.js` (Web client). Keep pure parsing and
-formatting helpers in `lib/provider-usage.js` so they stay unit-testable.
+formatting helpers in `lib/subscription-usage.js` so they stay unit-testable.
 
 ## Pull Requests
 

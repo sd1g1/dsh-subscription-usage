@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { decodeJwtPayload, parseCodexUsage, parseOpenCodeUsage } from '../lib/provider-usage.js';
+import { decodeJwtPayload, parseCodexUsage, parseOpenCodeUsage } from '../lib/subscription-usage.js';
 
 test('parseCodexUsage preserves percentage and reset timestamp', () => {
   assert.deepEqual(parseCodexUsage({

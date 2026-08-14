@@ -1,5 +1,5 @@
-# DSH Bundle patch: install the provider-usage runtime row and its browser half.
+# DSH Bundle patch: install the subscription-usage runtime row and its browser half.
 # Users can override this row later from their profile cordis.patch.yml.
 - insert:
-    - id: ui-provider-usage
-      name: '@local/dsh-provider-usage'
+    - id: ui-subscription-usage
+      name: '@local/dsh-subscription-usage'
