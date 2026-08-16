@@ -2,7 +2,7 @@
   "name": "@local/dsh-subscription-usage",
   "version": "0.1.0",
   "private": true,
-  "description": "Subscription provider usage badge for DeepSeek Harness Web",
+  "description": "DeepSeek Harness Web 的订阅 Provider 用量徽标",
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -47,5 +47,23 @@
     "@deepseek-ai/dsh-client-ui-conversation": "^0.1.0-rc.6",
     "@deepseek-ai/dsh-client-ui-model-selection": "^0.1.0-rc.6",
     "react": "^18.2.0"
-  }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "subscription",
+    "usage",
+    "web",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sd1g1/dsh-subscription-usage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sd1g1/dsh-subscription-usage/issues"
+  },
+  "homepage": "https://github.com/sd1g1/dsh-subscription-usage#readme"
 }

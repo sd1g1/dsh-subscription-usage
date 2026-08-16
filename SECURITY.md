@@ -1,20 +1,18 @@
-# Security Policy
+# 安全策略
 
-## Reporting a Vulnerability
+## 报告漏洞
 
-Provider tokens never leave the Host process: they are resolved only through
-`ctx.credentials` and are never sent to the browser or logged. If you still
-find a way credentials could leak, or any other vulnerability, please report
-it privately by opening a GitHub issue with the "security" label or contacting
-the maintainer directly. Do not open a public issue that exposes credential
-material.
+Provider Token 永远不会离开 Host 进程：它们只能通过 `ctx.credentials` 解析，
+绝不会发送到浏览器或写入日志。如果你仍然发现凭据可能泄露的途径，或其他任何
+漏洞，请私下报告：在 GitHub 上开一个带 "security" 标签的 issue，或直接联系
+维护者。不要开一个会暴露凭据内容的公开 issue。
 
-## Scope
+## 范围
 
-- The Host-side HTTP route (`/subscription-usage`) and its credential handling.
-- The Web client badge: it must never receive tokens, only usage summaries.
+- Host 侧的 HTTP 路由（`/subscription-usage`）及其凭据处理。
+- Web 客户端徽标：它绝不能收到 Token，只能收到用量摘要。
 
-## Out of Scope
+## 范围外
 
-- The OpenAI Codex and OpenCode Zen Go services themselves; this project is
-  not affiliated with them and their APIs may change without notice.
+- OpenAI Codex 和 OpenCode Zen Go 服务本身；本项目与其无关联，它们的 API
+  可能随时变更，恕不另行通知。

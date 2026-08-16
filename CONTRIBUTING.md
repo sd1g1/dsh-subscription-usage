@@ -1,24 +1,23 @@
-# Contributing
+# 贡献指南
 
-Thanks for your interest in `dsh-subscription-usage`.
+感谢你对 `dsh-subscription-usage` 的关注。
 
-## Development
+## 开发
 
 ```sh
 npm test
 ```
 
-The package is plain ESM JavaScript, no build step. The plugin entry is
-`lib/index.js` (Host) and `lib/client.js` (Web client). Keep pure parsing and
-formatting helpers in `lib/subscription-usage.js` so they stay unit-testable.
+本包是纯 ESM JavaScript，无需构建步骤。插件入口为 `lib/index.js`（Host）和
+`lib/client.js`（Web 客户端）。请把纯解析与格式化辅助函数放在
+`lib/subscription-usage.js` 中，以便保持可单元测试。
 
-## Pull Requests
+## 拉取请求
 
-- Keep changes focused and explain the motivation in the description.
-- Add or update tests in `test/` for any behavior change.
-- Run `npm test` before submitting.
+- 保持改动聚焦，并在描述中说明动机。
+- 任何行为变更请在 `test/` 中新增或更新测试。
+- 提交前运行 `npm test`。
 
-## License
+## 许可证
 
-By contributing you agree that your contributions are licensed under the
-[MIT License](LICENSE).
+贡献即表示你同意你的贡献以 [MIT License](LICENSE) 授权。
