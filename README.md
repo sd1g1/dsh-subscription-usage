@@ -29,20 +29,27 @@ Host 侧同时作废用量缓存，保证刷新拉到最新数据。刷新期间
 `ui-subscription-usage` 行；用户不需要再把这行复制到 profile 的
 `cordis.patch.yml`。
 
-在 `~/.dsh/profiles/web/package.json` 中，将包加入 `dependencies`，并把包名加入
+### 通过 DSH bundle 安装（推荐）
+
+```bash
+dsh plugin --profile web add github:sd1g1/dsh-subscription-usage
+```
+
+重启 DSH 后，bundle 会自动把 `ui-subscription-usage` 行加入 Web profile 的组合树。
+也可以直接编辑 profile 的 `package.json`，把包加入 `dependencies` 和
 `dsh.profile.bundles`：
 
 ```json
 {
   "dependencies": {
-    "@scope/dsh-subscription-usage": "^0.1.0"
+    "@local/dsh-subscription-usage": "github:sd1g1/dsh-subscription-usage"
   },
   "dsh": {
     "profile": {
       "bundles": [
         "@deepseek-ai/dsh-base",
         "@deepseek-ai/dsh-web-app",
-        "@scope/dsh-subscription-usage"
+        "@local/dsh-subscription-usage"
       ]
     }
   }
